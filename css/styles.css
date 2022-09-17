@@ -1,0 +1,64 @@
+@import "./reset.css";
+@import "./utility.css";
+
+/* navbar */
+
+/* .container-fluid {
+  padding: 0 5rem;
+} */
+.navbar {
+  padding: 2rem 0;
+}
+.navbar__icons li a i {
+  color: var(--gray-color);
+}
+.navbar__icons li a i:hover {
+  color: var(--black-color);
+}
+.navbar__login .btn span,.navbar__login .btn i {
+  font-size: 1.3rem;
+  color: var(--gray-color);
+}
+.navbar__login .btn:hover{
+    box-shadow: 0 0 0px 1.5px var(--black-color);
+}
+
+/* hero */
+#hero{
+    height: 60rem;
+    overflow: hidden;
+}
+#hero img{
+    width: 100%;
+}
+/* main */
+.card{
+  padding: 3rem;
+}
+.card img{
+  border-radius: 2rem;
+  max-width: 400px;
+}
+.favorite span{
+  color: yellow;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.favorite span p{
+  display: none;
+}
+.favorite span:hover{
+  width: 100px;
+  flex-direction: row;
+  gap: 1rem;
+}
+.favorite span:hover p{
+  display: block;
+}

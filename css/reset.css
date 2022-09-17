@@ -1,0 +1,48 @@
+@import url("http://fonts.cdnfonts.com/css/iranian-sans");
+@import "./utility.css";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  outline: none;
+}
+i {
+  vertical-align: middle;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Iranian Sans", sans-serif;
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+
+body {
+  font-size: 1.5rem;
+  overflow-x: hidden;
+}
+p,
+span,
+div,
+li,
+a button,
+span,
+input[type="text"]::placeholder {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
