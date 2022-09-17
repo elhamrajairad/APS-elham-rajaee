@@ -3,9 +3,6 @@
 
 /* navbar */
 
-/* .container-fluid {
-  padding: 0 5rem;
-} */
 .navbar {
   padding: 2rem 0;
 }
@@ -15,31 +12,40 @@
 .navbar__icons li a i:hover {
   color: var(--black-color);
 }
-.navbar__login .btn span,.navbar__login .btn i {
+.navbar__login .btn span,
+.navbar__login .btn i {
   font-size: 1.3rem;
   color: var(--gray-color);
 }
-.navbar__login .btn:hover{
-    box-shadow: 0 0 0px 1.5px var(--black-color);
+.navbar__login .btn:hover {
+  box-shadow: 0 0 0px 1.5px var(--black-color);
+  background-color: black;
+}
+.navbar__login .btn:hover span,
+.navbar__login .btn:hover i {
+  color: white;
+}
+.menu-mobile {
+  display: none;
 }
 
 /* hero */
-#hero{
-    height: 60rem;
-    overflow: hidden;
+#hero {
+  height: 60rem;
+  overflow: hidden;
 }
-#hero img{
-    width: 100%;
+#hero img {
+  width: 100%;
 }
 /* main */
-.card{
+.card {
   padding: 3rem;
 }
-.card img{
+.card img {
   border-radius: 2rem;
   max-width: 400px;
 }
-.favorite span{
+.favorite span {
   color: yellow;
   background-color: black;
   width: 30px;
@@ -51,14 +57,54 @@
   justify-content: center;
   transition: 0.3s;
 }
-.favorite span p{
+.favorite span p {
   display: none;
 }
-.favorite span:hover{
+.favorite span:hover {
   width: 100px;
   flex-direction: row;
   gap: 1rem;
 }
-.favorite span:hover p{
+.favorite span:hover p {
   display: block;
+}
+/* footer */
+#footer {
+  background-color: black;
+  color: white;
+  padding: 3rem;
+}
+.text-footer {
+  width: 60%;
+}
+.links-social {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.links-social i {
+  font-size: 1.5rem;
+}
+.red {
+  background-color: var(--primary-color);
+  color: white;
+}
+.star .fa-star {
+  color: yellow;
+}
+@media (max-width: 500px) {
+  #hero {
+    height: unset;
+  }
+  #products {
+    justify-content: center;
+  }
+  #footer {
+    justify-content: center;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  .navbar__icons ul {
+    display: none;
+  }
 }
