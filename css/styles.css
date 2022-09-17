@@ -91,6 +91,10 @@
 .star .fa-star {
   color: yellow;
 }
+.heading-main{
+  border-bottom: 1rem solid yellow;
+  width: 10rem;
+}
 @media (max-width: 500px) {
   #hero {
     height: unset;
